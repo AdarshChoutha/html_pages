@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Variables</h1>
+    <p>
+        In JavaScript variables are declared using <code>var</code> & <code>let</code> keywords.<br>
+        <code>var</code> is function scoped & <code>let</code> is block scoped.<br>
+        We can declare multiple variables in a sigle statement by seperating them using <code>,</code>.<br>
+        Variables are initialized using the assignment operator <code>=</code>.<br>
+        Uninitialized variable is assigned with <code>undefined</code> datatype.<br>
+        As JavaScript is a dynamic language, after initializing a variable we can assign any type of value to it.<br>
+        Variable name must start with an alphabet (either capital or small) or <code>_</code> or <code>$</code>.
+        No spaces or <code>-</code> or <code>keywords</code> are allowed in the variable name.<br>
+    </p>
+    <h1>Constants</h1>
+    <p>
+        In ES6(ES2015) version of JavaScript we can use <code>const</code> keyword to declare constants.<br>
+        After initializing constant using <code>const</code> keyword we can change its value as it is a constant.<br>
+    </p>
+    <h1><code>console.log</code></h1>
+    <p>
+        <code>console.log</code> is used to log data to console. Using this we can test/debug our code.
+    </p>
+    <h1>DataTypes</h1>
+    <p>
+        In JavaScript there are two types of datatypes <code>Primitive</code> and <code>Non-Primitive</code>.<br>
+        Primitive datatypes are:<br>
+        &emsp;&emsp;<code>String</code>&emsp;&emsp;&emsp; <code>Number</code>&emsp;&emsp;&emsp;<code>Boolean</code><br>
+        &emsp;&emsp;<code>undefined</code>&emsp;&emsp;<code>null</code><br>
+        &emsp;&emsp;<code>BigInt</code>&emsp;&emsp;&emsp; <code>Symbol</code><br>
+        Non-Primitive datatypes are:<br>
+        &emsp;&emsp;<code>Object</code>&emsp;&emsp;<code>function</code><br>
+        <li>We can use the <code>typeof</code> operator to find the datatype.<br></li>
+    </p>
+    <h1>Operators</h1>
+    <p><b>Operators:</b><br></p>
+    <ul>
+        <li>
+            <b>Assignment Operator:</b> <code>=</code><br>This operator is used to assign values.<br>
+            This operator can be combined with Arithmetic Operators to do arithmetic operation and then assign the
+            value.<br>
+            <code>+=</code>,<code>-=</code>,<code>*=</code>,<code>/=</code>,<code>%=</code>,<code>**=</code><br>
+        </li>
+        <li>
+            <b>Arithmetic Operators:</b> <code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>,
+            <code>%</code>,<code>++</code>,<code>--</code>,<code>**</code><br>
+            These operators are used to do math calculations like addition, subtraction, multiplication, division,
+            remainder, increment by 1, decrement by 1, exponentiation.
+        </li>
+        <li>
+            <b>Comparision Operators:</b> <code>==</code>,<code>==</code>,<code>===</code>,<code>!==</code>,
+            <code>&gt;</code>,<code>&gt;=</code>,<code>&lt;</code>,<code>&lt;=</code><br>
+            <code>==</code> Equal to: returns a boolean value <code>true</code> if operands are equal.<br>
+            <code>!=</code> Not equal to: returns a boolean value <code>true</code> if operands are not equal.<br>
+            <code>===</code> Strict equal to: returns a boolean value <code>true</code>
+            if operands are equal and are of equal type.<br>
+            <code>!==</code> Strict not equal to returns a boolean value <code>true</code>
+            if operands are not equal and/or not equal type.<br>
+        </li>
+        <li>
+            <b>Logical Operators:</b><br>
+            Logical AND <code>&&</code>: returns <code>true</code> only if both operands are <code>true</code>.<br>
+            Logical OR <code>||</code>: returns <code>false</code> only if both operands are <code>false</code>.<br>
+            Logical NOT <code>!</code>: returns <code>true</code> if false and vice-versa.<br>
+        </li>
+        <li>
+            <b>Bitwise Operators:</b><br>
+            Bitwise AND: <code>&</code>, Bitwise OR: <code>|</code>, Bitwise XOR: <code>^</code>,
+            Bitwise NOT: <code>~</code>, Left Shift: <code>&lt;&lt;</code>,
+            Sign-propagating right shift: <code>&gt;&gt;</code>, Zero-fill right shift <code>&gt;&gt;&gt;</code>.
+        </li>
+        <li>
+            <b>String Operator:</b> <code>+</code> operator is used to concatinate strings.
+        </li>
+        <li>
+            <b>Other Operators:</b><br>
+            <code>,</code> evaluates multiple operands and returns the value of the last operand.<br>
+            <code>?:</code> this condition operator evaluates condition and returns a value.<br>
+            <code>delete</code> delete operator.<br>
+            <code>typeof</code> returns a string indicating the data type.<br>
+            <code>void</code> discards the expression's return value.<br>
+            <code>in</code> returns <code>true</code> if the specified property is in the given object.<br>
+            <code>instanceof</code> returns <code>true</code>
+            if the specified object is of of the specified object type.<br>
+        </li>
+    </ul>
+    <h1>Comments</h1>
+    <p>
+        <code>//</code>: Single line comments. <code>/* */</code>: Double line comments.<br>
+    </p>
+    <h1>Type Conversions</h1>
+    <p>
+        There are two types of Type Conversions: <b>Implicit Conversion</b> (automatic type conversion),
+        <b>Explicit Conversion</b> (manual type conversion).<br>
+        <b>Implicit Conversions:</b><br>
+        <li>numeric string used with + gives string type.</li>
+        <li>numeric string used with - , / , * results number type.</li>
+        <li>non-numeric string used with - , / , * results to NaN(Not a Number)</li>
+        <li>if boolean is used, true is 1, false is 0.</li>
+        <li>null is 0 when used with number.</li>
+        <li>arithmetic operation of undefined with number, boolean or null gives NaN</li><br>
+    </p>
+    <p>
+        <b>Explicit Conversions:</b><br>
+        <b>To Number:</b><br>
+        <li>numeric strings and boolean values can be converted to numbers using <code>Number()</code>.</li>
+        <li>empty strings and <code>null</code> values return <code>0</code>.</li>
+        <li>a string with invalid number results in <code>NaN</code>.</li>
+        <li>You can also generate numbers from strings using <code>parseInt()</code>,
+            <code>parseFloat()</code>, unary operator <code>+</code> and <code>Math.floor()</code>.
+        </li><br>
+    </p>
+    <p>
+        <b>To String:</b><br>
+        <li>We can use <code>String()</code> or <code>.toString()</code>
+            to convert other datatypes to <code>String</code></li>
+        <li><code>String()</code> takes <code>null</code> and <code>undefined</code> and converts them to
+            <code>string</code>. However, <code>.toString()</code> gives error when <code>null</code> are passed.
+        </li><br>
+    </p>
+    <p>
+        <b>To Boolean:</b><br>
+        <li>We can use <code>Boolean()</code> to convert other datatypes to <code>Boolean</code></li>
+        <li><code>undefined</code>, <code>null</code>, <code>NaN</code>, 0, '' converts to false.</li>
+        <li>all other values give <code>true</code></li>
+    </p>
+    <h1>Control Flow</h1>
+    <p>
+        <code>if</code>, <code>if...else</code>, <code>if...else if...else</code>.<br>
+        <code>for</code>, <code>for...in</code>, <code>for...of</code>.<br>
+        <code>while</code>, <code>do...while</code>.<br>
+        <code>break</code>, <code>continue</code>.<br>
+        <code>[label]: [loop] ([condition]) { continue [label]; }</code><br>
+        <code>switch</code>
+    </p>
+    <h1>Functions</h1>
+    <p>
+        <b>Function declaration:</b>
+        <code>function [name]([parameters]) {[code] (return [optional]);}</code><br>
+        <b>Arrow Function declaration:</b>
+        <code>([parameters]) => {[code] (return [optional]);}</code><br>
+        <b>Function expressions:</b>
+        <code>[declaration keyword][name] = [function]</code><br>
+    </p>
+    <h1>Arrow Functions</h1>
+    <p>
+        <b>Function declaration:</b>
+        <code>[name]([parameters]) => {[code] (return [optional]);}</code><br>
+        <b>Arrow Function declaration:</b>
+        <code>([parameters]) => {[code] (return [optional]);}</code><br>
+        <b>Function expressions:</b>
+        <code>[declaration keyword][name] = [function]</code><br>
+    </p>
+    <h1>Variable Scope</h1>
+    <p>
+        Scopes are two types: Global Scope & Local Scope<br><br>
+        <b>Global Scoped</b> variable can be used any where in the program.<br>
+        A variable with no declaration is a Global Variable.<br>
+        A <code>var</code> declared in the root of program is a Global Variable.<br><br>
+        <b>Local Scoped</b> variable can be used only in the part of the program in which it is declared.<br>
+        var is function scoped variable & let is block scoped variable.<br>
+        If a <code>var</code> is declared inside an <code>if</code>
+        block which is inside a function then it can accessed anywhere in that function.<br>
+    </p>
+    <h1>Hoisting</h1>
+    <p>
+        <code>var</code> allows hoisting but let and const doesn't.<br>
+        You can also assign a value to <code>var</code> and then declare it.<br>
+        You cannot access <code>let</code> variable before declaring it.<br>
+        We can declare same identifier using <code>var</code> multiple times but it cannot be done with
+        <code>let</code> & <code>const</code>.
+        <code>Functions</code> also allows hoisting.
+    </p>
+    <h1>Recursion</h1>
+    <p>
+        Recursion is a function calling itself.
+    </p>
+    <h1>Objects</h1>
+    <p>
+        Declaration:<br><code>[declaration type][identifier] = { [name]:[value] }</code>.<br>
+        <code>[declaration type][identifier] = { [property]:[value], [method]:[function] }</code>.<br>
+        We can access values of a property by using its key. It is of two types:<br>
+        Using dot notation: <code>[object].[property]</code>,&emsp;
+        bracket notation: <code>[object]["[property]"]</code>.<br>
+        Objects can be nested.
+    </p>
+    <h1><code>this</code></h1>
+    <p>
+        <code>this</code> keyword when used with the object's method refers to the object.<br>
+        <code>this</code> is bound to an object.
+    </p>
+    <h1>Constructor</h1>
+    <p>
+        In JavaScript, a constructor function is used to create objects.<br>
+        Object Literal is generally used to create single object.
+        The constructor function is useful if you want to create multiple objects.<br><br>
+        <b>Built-in Constructors:</b><br>
+        &emsp;<code>Object()</code>&emsp;<code>String()</code>
+        &emsp;<code>Number()</code>&emsp;<code>Boolean()</code>
+    </p>
+    <h1>Properties</h1>
+    <p>
+        In an object properties are of two types Data Property and Accessor Property.<br>
+        <b>Data Property</b> is used to store data in the property.<br>
+        <b>Accessor Property</b> is used to access or modify the values of Data Property of an Object.<br>
+        <b>Accessor Properties</b> are:<br>
+        <code>get</code> - to define a getter method to get the property value.<br>
+        <code>set</code> - to define a setter method to set the property value.<br>
+        <b>Object.defineProperty()</b> method is used to add getters and setters.<br>
+        Syntax: <code>Object.defineProperty([object], "[property name]", { [get/set] : [function]})</code>.<br>
+    </p>
+    <h1>Prototype</h1>
+    <p>
+        Every function and object has a property named prototype by default.<br>
+        <b>Prototype Inheritance</b>, a prototype can be used to add properties and methods to a constructor function.
+        And objects inherit properties and methods from a prototype.
+    </p>
+    <h1>Object Prototype</h1>
+    <p>
+        Syntax: <code>[Object].prototype.[property] = [value]</code>.
+    </p>
+    <h1>Arrays</h1>
+    <p>Learn adout <a href="arrays.html">Arrays</a>.</p>
+    <h1>Strings</h1>
+    <p>Learn adout <a href="strings.html">Strings</a>.</p>
+    <h1>JavaScript Maths</h1>
+    <p>Learn adout <a href="jsMaths.html">JavaScript Maths</a>.</p>
+    <h1>Errors</h1>
+    <p>
+        There are two types of errors:<br>
+        <b>Syntax Error:</b> Error in the syntax i.e, any spelling mistake or unexpected token or missing tokens.<br>
+        <b>Runtime Error:</b> This occurs during the execution of the program. This is due to invalid expression or
+        function or changing constants etc.,. These are called <b>Exceptions</b>.<br>
+        <code>try...catch</code> statement handles exeptions.<br>
+        Syntax: <code>try{[try this]}catch(error){[catch error]}finally{[executes anyway [optional]]}</code>.<br><br>
+        <code>throw</code> statment throws user-defined exceptions.<br>
+        Built-in errors can also be used to throw errors. Syntax:
+        <code>throw new [built-in error] [expression]</code>.<br><br>
+        Built-in Errors:<br>
+        &emsp;<code>EvalError</code>&emsp;<code>RangeError</code>&emsp;<code>ReferenceError</code>&emsp;<code>SyntaxError</code>
+        &emsp;<code>TypeError</code><br>&emsp;<code>URIError</code>&emsp;<code>AggregateError</code>&emsp;<code>InternalError</code><br><br>
+        <code>Error()</code> creates a new Error Object.<br><br>
+    </p>
+    <h1>Modules</h1>
+    <p>
+        We can store code in a file and using <code>export</code> we can export that from the file and using
+        <code>import</code> we can import it as a module to another file.<br>
+        Using <code>as</code>, either in export file or import file, we can rename the functions or variable etc,.<br>
+        <code>default</code> export is used to export default functions etc,.
+        There should be only one default export in a file.<br>
+        By default modules are in strict mode.<br>
+    </p>
+    <h1>ES6</h1>
+    <p>
+        JavaScript ES6 (also known as ECMAScript 2015 or ECMAScript 6) is the newer version of
+        JavaScript that was introduced in 2015.<br><br>
+        In this ES6 there are:<br>
+        <code>let</code>, <code>const</code>, Arrow Function, Classes, Default Parameters, Template Literals,
+        Destructuring, <code>import</code> and <code>export</code>, Promises, Rest Parameter, Spread Operator.
+    </p>
+    <h1>Classes</h1>
+    <p>
+        In JavaScript, the keyword class was introduced in ES6 (ES2015) that also allows us to create objects.
+        Classes are similar to constructor functions in JavaScript.
+    </p>
+
+</body>
+
+</html>
