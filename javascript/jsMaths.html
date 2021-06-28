@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | JavaScript Maths</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Precision Problems</h1>
+    <p>
+        Operations on floating-point numbers results in some unexpected results. For example,<br>
+        <code>console.log(0.1 + 0.2); // 0.30000000000000004</code>
+        The result should be 0.3 instead of 0.30000000000000004.<br>
+        This error occurs because in JavaScript, numbers are stored in binary form to represent decimal digits
+        internally. And decimal numbers can't be represented in binary form exactly.<br>
+        To solve the above problem, you can do something like this:<br>
+        <code>console.log((0.1 * 10 + 0.2 * 10) / 10); // 0.3</code><br>
+        You can also use the <code>.toFixed([round up number])</code> method.<br>
+        <code>console.log((0.1 + 0.2).toFixed(2)); // 0.30</code><br>
+        toFixed(2) rounds up the decimal number to two decimal values.<br>
+        <code>console.log(9999999999999999); // 10000000000000000</code><br>
+        <code>console.log(999999999999999); // 999999999999999</code><br>
+        Integers are accurate up to 15 digits.
+    </p>
+    <h1>JavaScript Number Methods</h1>
+    <ul>
+        <li><code>isNaN([Number / numeric string])</code></li>
+        <li><code>isFinite([Number / numeric string])</code></li>
+        <li><code>parseFloat([[Number / numeric string])</code></li>
+        <li><code>parseInt([[Number / numeric string], [radix[2-36]])</code></li><br>
+        <li><code>Number.isNaN([Number])</code></li>
+        <li><code>Number.isFinite([Number])</code></li>
+        <li><code>Number.isInteger([Number])</code></li>
+        <li><code>Number.isSafeInteger([Number])</code></li><br>
+        <li><code>[Number].toExponential(fractionDigits)</code></li>
+        <li><code>[Number].toFixed([digits after decimal])</code></li>
+        <li><code>[Number].toPrecision([0-100])</code></li>
+        <li><code>[Number].toString([radix[2-36]])</code></li>
+        <li><code>[Number].toLocaleString()</code></li><br>
+        <li><code>valueof()</code></li>
+    </ul>
+    <h1>JavaScript Number Properties</h1>
+    <ul>
+        <li><code>Number.EPSILON</code></li>
+        <li><code>Number.MAX_SAFE_INTEGER</code></li>
+        <li><code>Number.MAX_VALUE</code></li>
+        <li><code>Number.MIN_SAFE_INTEGER</code></li>
+        <li><code>Number.MIN_VALUE</code></li>
+        <li><code>Number.NaN</code></li>
+        <li><code>Number.NEGATIVE_INFINITY</code></li>
+        <li><code>Number.POSITIVE_INFINITY</code></li>
+        <li><code>Number.prototype</code></li>
+    </ul>
+
+</body>
+
+</html>

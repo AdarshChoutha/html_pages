@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Arrays</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Create an Array</h1>
+    <p>
+        Array can be created using an array literal or <code>new</code> keyword.<br>
+        <code>[declaration type] [identifier] = [["String", Number, Boolean, undefined, null, Object, function, Array]]</code><br>
+    </p>
+    <h1>Access Elements of an Array</h1>
+    <p>
+        We can access array elements using indices <code>Array[[index]]</code>.<br>
+        Array indices start from 0.
+    </p>
+    <h1>Add an Element to an Array</h1>
+    <p>
+        <code>.push()</code> method adds an Element at the end of an Array.<br>
+        <code>.unshift()</code> method adds an Element at the start of an Array.<br><br>
+    </p>
+    <h1>Change an Element of an Array</h1>
+    <p>
+        <code>Array[[index]] = value</code> this statement changes an element of an Array.
+    </p>
+    <h1>Remove an Element of an Array</h1>
+    <p>
+        <code>.pop()</code> method removes an Element from the end of an Array.<br>
+        <code>.shift()</code> method removes an Element from the start of an Array.<br><br>
+        These methods also return the element that is removed.
+    </p>
+    <h1>Array Length</h1>
+    <p>
+        <code>[Array].length</code> method return the length of an Array.
+    </p>
+    <h1>Array Methods</h1>
+    <p>Methods that makes changes to array and returns something.</p>
+    <ul>
+        <li><code>[Array].push([element])</code> adds element to array at end and returns length of the array.</li>
+        <li><code>[Array].unshift([element])</code> adds element to array at start and returns length of the array.</li>
+        <li><code>[Array].pop([element])</code> removes element of array from end and returns it.</li>
+        <li><code>[Array].shift([element])</code> removes element of array from start and returns it.</li>
+        <li><code>[Array].sort()</code> sorts the array in specific order and return the array.</li>
+        <li><code>[Array].fill([value], [from index], [to index])</code> fills array elements
+            with given values and returns the array.</li>
+    </ul>
+    <p>Methods that makes changes to array but returns nothing.</p>
+    <ul>
+        <li><code>[Array].splice([start], [deleteCount], [elements])</code> removes deleteCount elements
+            from start adds elements at start index.</li>
+    </ul>
+    <p>Methods that doesn't make any changes to array but returns something.</p>
+    <ul>
+        <li><code>[Array].length</code> returns length of an array.</li>
+        <li><code>[Array].reverse()</code> returns the reversed array.</li>
+        <li><code>[Array].join()</code> returns a string that is the concatination of the array elements.</li>
+        <li><code>[Arrsy].toString()</code> returns the string representation of an array.</li>
+        <li><code>[Array].concat()</code> returns an array that is the concatination of the arrays and elements.</li>
+        <li><code>[Array].indexOf([element])</code> returns the first index of occurence of an element.</li>
+        <li><code>[Array].lastIndexOf([element])</code> returns the last index of occurence of an element.</li>
+        <li><code>[Array].slice([from index], [no. of elements])</code> returns elements
+            from given index to given no. of elements as an array</li>
+        <li><code>[Array].find([function ()])</code> returns first element that satisfies a condition
+            that is provided as function.</li>
+        <li><code>[Array].includes([element])</code> returns if it includes a value.</li>
+        <li><code>[Array].reduce([(total, element) => { return [value]; }], [initial value])</code>
+            reduces array to single value from left using provided function and returns it.</li>
+        <li><code>[Array].reduceRight([(total, element) => { return [value]; }], [initial value])</code>
+            reduces array to single value from right using provided function and returns it.</li>
+        <li><code>Array.isArray([Array])</code> returns true if array is an array.</li>
+        <li><code>[Array].filter((element, index, array) => { return [value]; })</code>
+            returns array by filtering elements on given test.</li>
+        <li><code>[Array].map((element, index, array) => { return [value]; })</code>
+            returns array by mapping elements using given function.</li>
+        <li><code>[Array].forEach((element, index, array) => { return [value]; })</code>
+            returns array by mapping elements using given function.</li>
+        <li><code>[Array].some((element, index, array) => { return [condition]; })</code>
+            returns true if any element passes given condition.</li>
+        <li><code>[Array].every((element, index, array) => { return [condition]; })</code>
+            returns true if every element passes given condition.</li>
+        <li><code>[Array].copyWithin([target], [start], [end])</code> replaces start to end elements
+            from target element within same array and returns this array</li>
+        <li><code>[Array].flat([depth])</code> create a new array with all sub-array elements concatenated into it
+            recursively up to the specified depth.</li>
+        <li><code>[Array].flatMap((element, index, array) => { return [value]; }, [depth])</code>
+            equivalent to <code>[Array].map((element, index, array) => { return [value]; }).flat([depth])</code></li>
+        <li><code>[Array].toLocaleString([locales], [options])</code>This method converts each array elements to Strings
+            using their toLocaleString methods and separates them by a comma.</li>
+    </ul>
+    <p>Methods that doesn't make any changes to array and returns nothing.</p>
+    <ul>
+        <li><code>[Array].forEach((element, index, array) => { })</code>
+            loops through on each element of array and executes given function.</li>
+    </ul>
+    <p>Other Methods.</p>
+    <ul>
+        <li><code>Array.of([Array])</code></li>
+        <li><code>[Array].entries()</code></li>
+        <li><code>[Array].keys()</code></li>
+        <li><code>[Array].value()</code></li>
+        <li><code>[Array].from()</code></li>
+        <li><code>[Array].constructor</code></li>
+    </ul>
+
+</body>
+
+</html>
