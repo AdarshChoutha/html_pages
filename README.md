@@ -1,8 +1,11 @@
 # Html Pages
 These are simple html pages.
+Link to hosted pages - https://adarshchoutha.github.io/html_pages/
 
 # Human Following Car
 
-It is the project I have done at my college with my group.
+# Javascript
+Link to hosted page - https://adarshchoutha.github.io/html_pages/javascript/
 
-This is a car that follows humans in aumatic mode and can be switched to remote control mode or bluetooth control mode.
+# Technical Document Page
+Link to hosted page - https://adarshchoutha.github.io/html_pages/technical_document_page/
