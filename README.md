@@ -1,6 +1,6 @@
 # Html Pages
 These are simple html pages.
-Link to hosted pages - https://adarshchoutha.github.io/html_pages/
+Link to hosted pages - "<a href="https://adarshchoutha.github.io/html_pages/">https://adarshchoutha.github.io/html_pages/</a>"
 
 # Human Following Car
 
